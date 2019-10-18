@@ -11,12 +11,15 @@ class Node {
 }
 
 /**
- * This is a new implementation of a simple linked
- * list which we use as an exercise.
+ * This is an implementation of a simple linked list.
+ * We have used it to practice data structures.
  */
 public class LinkedList {
     Node first;
 
+    /**
+     * Default constructor to create an empty list.
+     */
     public LinkedList() {
         first = null;
     }
