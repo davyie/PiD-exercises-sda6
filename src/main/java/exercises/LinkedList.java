@@ -10,6 +10,10 @@ class Node {
     }
 }
 
+/**
+ * This is a new implementation of a simple linked
+ * list which we use as an exercise.
+ */
 public class LinkedList {
     Node first;
 
