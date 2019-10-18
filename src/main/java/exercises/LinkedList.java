@@ -11,7 +11,7 @@ class Node {
 }
 
 /**
- * This is an implementation of a linked list.
+ * This is an implementation of a simple linked list.
  * We have used it to practice data structures.
  */
 public class LinkedList {
