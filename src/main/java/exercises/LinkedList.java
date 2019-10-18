@@ -10,9 +10,16 @@ class Node {
     }
 }
 
+/**
+ * This is an implementation of a linked list.
+ * We have used it to practice data structures.
+ */
 public class LinkedList {
     Node first;
 
+    /**
+     * Default constructor to create an empty list.
+     */
     public LinkedList() {
         first = null;
     }
