@@ -35,7 +35,33 @@ public class Hashtable {
         }
     }
 
+    /**
+     * Looks up the value associated with the given key,
+     * or `null` if the key cannot be found.
+     *
+     * @param key The key to look up.
+     * @return The value associated with the given key, or `null` if the key does not exist.
+     */
     public Object lookup(Object key) {
-        return null;
+        if (key == null) {
+            throw new IllegalArgumentException("null key not permitted");
+        }
+        int hc = key.hashCode();
+        int index = hc % SIZE;
+        Entry e = table[index];
+        if (e == null) {
+            return null;
+        } else {
+            Entry current = e;
+            while (current.key != key && current.next != null) {
+                current = current.next;
+            }
+            if (current.key == key) {
+                return current.value;
+            } else {
+                // not found but `current` is last entry
+                return null;
+            }
+        }
     }
 }
