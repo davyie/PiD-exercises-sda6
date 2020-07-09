@@ -30,27 +30,18 @@ public class LinkedList {
      * @param elem The element to be added.
      */
     public void add(int elem) {
-        if (first == null) {
-            // this means the list is empty!
-            // handle the simple case
-            Node n = new Node(elem, null);
-            first = n;
-        } else {
-            // first != null
-            // handle the more tricky case
+            // TODO: Assignment 1 
+    }
 
-            // 1. step: find last node!
-            // The last node is the node where
-            // next == null!
-            Node current = first;
-            while (current.next != null) { // is it the last node?
-                current = current.next;
-            }
-            // here, we know: current is the last node
-            // because current.next == null
-            Node last = current;
-            last.next = new Node(elem, null);
-        }
+    /**
+     * This function searches for a specific value in the data structure. 
+     * @param value, an integer value that we want search for. 
+     * @return boolean, if the value is found the return true otherwise false. 
+     */
+    public boolean search(int value) {
+        // TODO: Assignment 2 
+
+        return -1;
     }
 
     /**
@@ -60,25 +51,27 @@ public class LinkedList {
      * @return the element at the given index.
      */
     public int get(int index) {
-        // 2 cases
-        if (first == null) { // list is empty
-            // case 1: zero elements
-            throw new IndexOutOfBoundsException("list is empty");
-        } else {
-            // case 2: at least one element
-            int counter = 0;
-            Node current = first;
-            // can use "next" field
-            while (current.next != null && counter < index) {
-                current = current.next;
-                counter++;
-            }
-            if (counter == index) {
-                return current.elem;
-            } else {
-                throw new IndexOutOfBoundsException("index out of bounds");
-            }
+        // TODO: Assignment 3 - Function 1
+        return -1;
+    }
 
-        }
+    /**
+     * This function returns the number of data points in the data structure. 
+     * 
+     * @return int, the size of the data structure. 
+     */
+    public int size() {
+        // TODO: Assignment 4
+        return -1;
+    }
+
+    /**
+     * This function removes a data point at a given index. 
+     * @param index, index of the data points we want to remove. 
+     * @return boolean, if remove operation was successful return true, otherwise false. 
+     */
+    public boolean remove(int index) {
+        // TODO: Assignment 5
+        return false;
     }
 }
